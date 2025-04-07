@@ -1,0 +1,189 @@
+
+.header_container{
+  
+    position: relative;
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+   
+ }
+ 
+ /* -------------------------------------------------Content sections--------------- */
+ .content_container{
+  
+   height: fit-content;
+   width: 100%;
+   padding-bottom: 10%;
+   margin-top: 5%;
+   display: flex;
+   flex-direction: column;
+   
+ }
+ 
+ 
+ /* --------------------titolo content--------------- */
+ .titolo_content{
+   display: flex;
+   position: relative;
+   align-items: center;
+   justify-content: space-between;
+   margin-left: 10%;
+   margin-right: 10%;
+   z-index: 12;
+   
+   
+ }
+ .titolo_content h2{
+  
+   color: #ffffff;
+   font-size: 24px;
+   font-weight: bold;
+   
+ }
+ 
+ .titolo_content a{
+   flex-shrink: 0;
+   font-size: 14px;
+   text-decoration: underline;
+ }
+ 
+ /* --------------------card container--------------- */
+ .card_content{
+   position: relative;
+   display: flex;
+   overflow-x: auto;
+   flex-wrap: nowrap;
+   gap: 2%;
+   padding-left: 10%;
+   padding-right: 10%;
+   scroll-behavior: smooth;
+   scrollbar-width: none;
+   width: 100%;
+   height: fit-content;
+   padding-top: 3%;
+   padding-bottom: 3%;
+   
+ 
+   
+ }
+ .ccard_content::-webkit-scrollbar {
+   display: none; /* Nasconde la barra dello scroll su Chrome, Safari, Edge */
+ }
+ /* --------------------ombra laterale-------------- */
+ .shadow{
+     position: absolute;
+     display: flex;
+     width: 100%;
+     justify-content:space-between ;
+     pointer-events: none;
+     transform: translateY(-550px);
+     z-index: 10;
+     
+ }
+ .shadow_right{
+     
+     position: absolute;
+ 
+     width: 10%;
+     height: 550px;
+     right: 0px;
+     
+ 
+     background: linear-gradient(90deg, hwb(0 6% 94% / 0) 0%, #0F0F0F 100%);
+ }
+ .shadow_left{
+     
+     position: absolute;
+     width: 10%;
+     height:550px;
+     left: 0px;
+     
+ 
+     background: linear-gradient(90deg,#0F0F0F  0%, rgba(15, 15, 15, 0) 100%);
+ }
+ 
+ .service_section{
+     margin-top: 5%;
+     width: 100%;
+    
+ }
+ 
+ .disponibili_section{
+   margin-top: 5%;
+   position: relative;
+ }
+ 
+ 
+ .footer_container{
+   width: 100%;
+   position: relative;
+ }
+ 
+ 
+ 
+ @media screen  and (max-width: 376px){/* ---------------------------------------------------------------------------mobile 376px- */
+   .content_container{
+     margin-top: 30%;
+   }
+  
+ /* --------------------titolo content-------------- */
+   .titolo_content{
+     z-index: 12;
+     
+   }
+   .titolo_content h2{
+     font-size: 16px;
+   }
+   .titolo_content a{
+     text-align: right;
+   }
+ 
+   
+ }
+ 
+ @media screen and (max-width: 680px) and (min-width: 377px) {/* -----------------------------------------------------mobile 425px- */
+   .content_container{
+     margin-top: 25%;
+   }
+ 
+ /* --------------------titolo content-------------- */
+   .titolo_content{
+    
+     margin-left: 5%;
+     z-index: 12;
+   }
+  
+   .titolo_content a{
+     text-align: right;
+   }
+   .titolo_content h2{
+     font-size: 18px;
+   }
+   .card_content{
+     gap: 0px;
+   }
+ }
+ 
+ @media screen and (max-width: 899px) and (min-width: 680px){/* ------------------------------------------------------tablet 760px- */
+     .content_container{
+       margin-top: 30%;
+     }
+ 
+     .titolo_content h2{
+       font-size: 20px;
+     }
+ }
+ 
+ @media screen and (max-width: 1024px) and (min-width: 900px){/* ----------------------------------------------------laptop 1024px- */
+     
+ 
+ }
+ 
+ @media screen and (max-width: 1440px) and (min-width: 1025px){/* ---------------------------------------------------laptop 1440px- */
+  
+ }
+ 
+ @media screen  and (min-width: 1441px){/* ------------------------------------------------------------------------------laptop 4k- */
+     
+ }

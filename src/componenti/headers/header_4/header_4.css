@@ -1,0 +1,189 @@
+/* --------------------------------------------------------------HEADER-*/
+
+
+/*--------------------Container-----------------------*/  
+.header4{
+   
+    position: absolute;
+    background-color: #1c1c1c;
+    z-index: 10;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    height: 90px;
+    border-radius: 100px;
+    margin: 20px 5% 0 5%;
+   
+    padding: 0% 3%;
+      
+}
+
+
+/*--------------------logo-----------------------*/   
+.header4_logo{
+    width: fit-content;
+    height: fit-content;
+    align-items: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo4_svg{
+    width: 90%;
+    height: 80%;
+    min-width: 70px;
+    margin-top: 3%;
+}
+
+/*--------------------link-----------------------*/  
+.header4_link {
+    color: #ffff;
+    display: flex;
+    font-size: 14px;
+    font-weight: 100;
+    gap:30px;
+    align-items: center;
+    white-space: nowrap;
+}
+
+
+.header4_link a:hover {
+    text-decoration: underline;
+}
+
+
+
+
+/*------------------------------------------------------------------------------MEDIA QUERY*/
+
+@media screen  and (max-width: 376px){
+    .header4_link{
+        display: none;
+    }
+    .header4 {
+        display: flex;
+          width: 100%;
+          border-radius: 0;
+          margin-top: 0;
+          margin-left: 0;
+          padding: 2%   4%;
+          border-bottom-right-radius:30px ;
+          border-bottom-left-radius: 30px;
+          
+        background: linear-gradient(181.67deg, rgba(15, 15, 15, 0.67) 50%, rgba(15, 15, 15, 0) 98.58%);
+   
+        }
+     
+}
+
+@media screen and (max-width: 680px) and (min-width: 377px) {/* -----------------------------------------------------------------mobile 425px- */
+    .header4_link{
+        display: none;
+    }
+    .header4 {
+        display: flex;
+          width: 100%;
+          border-radius: 0;
+          margin-top: 0;
+          margin-left: 0;
+          padding: 2%   4%;
+          margin: 0;
+          background: linear-gradient(180deg, rgba(15, 15, 15, 0.67) 50%, rgba(15, 15, 15, 0) 98.58%);
+      
+        }
+
+    
+}
+
+
+@media screen and (max-width: 899px) and (min-width: 681px){/* --------------------------------------------------------------------tablet 760px- */
+
+   
+
+    .menu4_mobile{
+        display: none;
+       }
+
+
+   /*  ---------------------------------------------------------------------------header----------- */
+    .header4 {
+    display: flex;
+      width: 100%;
+      border-radius: 0;
+      margin-top: 0;
+      margin-left: 0;
+      padding: 2%   4%;
+      border-bottom-right-radius:30px ;
+      border-bottom-left-radius: 30px;
+      background-color: #1c1c1c;
+  
+    }
+    /*  ---------------------logo_header----------- */
+    .header4_logo{
+        width: 15%;
+    }
+
+
+    /*  ---------------------Link_header----------- */
+    .header_link a{
+        font-size: 12px;
+    }
+    .header_link{
+        gap: 15px;
+    }
+
+    
+    
+
+}
+
+
+
+@media screen and (max-width: 1024px) and (min-width: 900px){/* -----------------------------------------------------------------laptop 1024px- */
+    
+    .menu4_mobile{
+        display: none;
+       }
+
+   
+    /*  ---------------------logo_header----------- */
+    .header_logo{
+        width: 20%;
+    }
+    
+     /*  ---------------------pulsanti_header----------- */
+    
+     .button_log{
+        width: 80px;
+     }
+
+     .button_sign{
+        width: 80px;
+     }
+    
+
+    
+    
+
+}
+
+@media screen and (max-width: 1440px) and (min-width: 1025px){/* ------------------------------------------------------------------laptop 1440px- */
+
+    .menu4_mobile{
+        display: none;
+       }
+}
+
+
+@media screen  and (min-width: 1441px){/* ---------------------------------------------------------------------laptop 4k- */
+   
+
+    .menu4_mobile{
+        display: none;
+       }
+
+
+    
+}

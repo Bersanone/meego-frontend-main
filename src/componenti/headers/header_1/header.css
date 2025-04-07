@@ -1,0 +1,365 @@
+/* --------------------------------------------------------------HEADER-*/
+
+
+/*--------------------Container-----------------------*/  
+.header{
+    position: absolute;
+    background-color: #1c1c1c;
+    z-index: 10;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    height: 90px;
+    border-radius: 100px;
+    margin: 20px 5% 0 5%;
+   
+    padding: 0% 3%;
+      
+}
+
+
+/*--------------------logo-----------------------*/   
+.header_logo{
+    width: fit-content;
+    height: fit-content;
+    align-items: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo_svg{
+    width: 90%;
+    height: 80%;
+    min-width: 70px;
+    margin-top: 3%;
+}
+
+/*--------------------link-----------------------*/  
+.header_link {
+    color: #ffff;
+    display: flex;
+    font-size: 14px;
+    font-weight: 100;
+    gap:30px;
+    align-items: center;
+    white-space: nowrap;
+}
+
+
+.header_link a:hover {
+    text-decoration: underline;
+}
+
+/*--------------------pulsanti-----------------------*/   
+.header_button{
+    display: flex;
+    font-weight: 700;
+    font-size: 14px;
+    font-style: normal;
+    text-align: center;
+    gap: 5%;
+}
+
+.button_log{
+    background-color: #343434;
+    cursor: pointer;
+    color: #ffff;
+    width: 110px ;
+    height: 40px;
+    border-radius: 10px;
+    transition: all 0.6s, transform 0.9s ease-in;
+   
+
+}
+.button_log:hover{
+    background-color: #4e4e4e;
+}
+
+.button_sign{
+    background-color: #3FCFFF;
+    cursor: pointer;
+    color: #000000;
+    width: 110px ;
+    height: 40px;
+    border-radius: 10px;
+    transition: all 0.6s, transform 0.9s ease-in;
+
+}
+
+.button_sign:hover{
+    background-color: #ffffff;
+}
+/*-----------------------------------------------------------------------------accesso*/
+
+.welcome_message{
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    align-items: center;
+    gap: 20px;
+}
+
+.welcome_message h4{
+    color: #ffff;
+}
+
+.user_img{
+    cursor: pointer;
+    border-radius: 100%;
+    background-color: #0f0f0f;
+    position: relative;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.user_img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    border-radius: 100%; 
+  }
+
+
+
+.user_img::before {
+    content: '';
+    position: absolute;
+    
+    top: -2px; /* Aggiunge uno spazio per il bordo gradiente */
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    border-radius: 100%; /* Raggio del bordo uguale a quello della card */
+    background: linear-gradient(90deg, #00E45F, #3FCFFF);
+    background-size: 100% 100% ;
+    background-repeat: no-repeat;
+    z-index: -1; /* Posiziona il gradiente dietro la card */
+
+    
+    
+}
+/*-----------------------------------------------------------------------------Menu Laterale*/
+.header_menuLat{
+    position: absolute;
+    z-index: 20;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: #1c1c1c;
+    right:0;
+    top: 150px;
+    transform: translatex(20px);
+    width: 300px;
+    height: 400px;
+    padding: 2%;
+    background: linear-gradient(90deg, rgba(28, 28, 28, 0.85) 50.15%, rgba(32, 32, 32, 0.85) 100%);
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(7.5px);
+    /* Note: backdrop-filter has minimal browser support */
+    border-radius: 20px;
+
+
+}
+
+.menuLat_button{
+    display: flex;
+    flex-direction: row;
+    
+    align-items: center;
+    width: 230px;
+    padding: 4% 4%;
+    background-color: transparent;
+    border-radius: 50px;
+    margin-right: 10%;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+   
+}
+.menuLat_button:hover{
+    background-color: #343434;
+}
+
+.menuLat_button img{
+    margin-right: 20px ;
+}
+.menuLat_button p{
+    color: #ffff;
+    font-size: 14px;
+}
+
+.menuLat_button_exit{
+    display: flex;
+    flex-direction: row;
+    
+    align-items: center;
+    width: 230px;
+    padding: 4% 4%;
+    background-color: transparent;
+    border-radius: 50px;
+    margin-right: 10%;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.menuLat_button_exit img{
+    margin-right: 20px ;
+}
+.menuLat_button_exit p{
+    color: #ffff;
+    font-size: 14px;
+}
+
+.menuLat_button_exit:hover{
+    background-color: #FF3232;
+}
+
+
+
+/*------------------------------------------------------------------------------MEDIA QUERY*/
+
+@media screen  and (max-width: 376px){
+    .header_link, .header_button{
+        display: none;
+    }
+    .header {
+        display: flex;
+          width: 100%;
+          border-radius: 0;
+          margin: 0;
+          padding: 2%   4%;
+          border-bottom-right-radius:30px ;
+          border-bottom-left-radius: 30px;
+          background-color: #1c1c1c;
+      
+        }
+     
+}
+
+@media screen and (max-width: 680px) and (min-width: 377px) {/* -----------------------------------------------------------------mobile 425px- */
+    .header_link, .header_button{
+        display: none;
+    }
+    .header {
+        display: flex;
+          width: 100%;
+          border-radius: 0;
+          margin: 0;
+          padding: 2%   4%;
+          border-bottom-right-radius:30px ;
+          border-bottom-left-radius: 30px;
+          background-color: #1c1c1c00;
+        
+        }
+
+    
+}
+
+
+@media screen and (max-width: 899px) and (min-width: 681px){/* --------------------------------------------------------------------tablet 760px- */
+
+   
+
+    .menu_mobile{
+        display: none;
+       }
+
+
+   /*  ---------------------------------------------------------------------------header----------- */
+    .header {
+    display: flex;
+      width: 100%;
+      border-radius: 0;
+      margin-top: 0;
+      margin-left: 0;
+      padding: 2%   4%;
+      border-bottom-right-radius:30px ;
+      border-bottom-left-radius: 30px;
+      background-color: #1c1c1c;
+  
+    }
+    /*  ---------------------logo_header----------- */
+    .header_logo{
+        width: 15%;
+    }
+    .logo_svg{
+        
+    }
+
+    /*  ---------------------Link_header----------- */
+    .header_link a{
+        font-size: 12px;
+    }
+    .header_link{
+        gap: 15px;
+    }
+     /*  ---------------------pulsanti_header----------- */
+    .header_button{
+        font-size: 12px;
+        }
+     .button_log{
+        width: 80px;
+     }
+
+     .button_sign{
+        width: 80px;
+     }
+    
+    
+
+}
+
+
+
+@media screen and (max-width: 1024px) and (min-width: 900px){/* -----------------------------------------------------------------laptop 1024px- */
+    
+    .menu_mobile{
+        display: none;
+       }
+
+   
+    /*  ---------------------logo_header----------- */
+    .header_logo{
+        width: 20%;
+    }
+    
+     /*  ---------------------pulsanti_header----------- */
+    
+     .button_log{
+        width: 80px;
+     }
+
+     .button_sign{
+        width: 80px;
+     }
+    
+
+    
+    
+
+}
+
+@media screen and (max-width: 1440px) and (min-width: 1025px){/* ------------------------------------------------------------------laptop 1440px- */
+
+    .menu_mobile{
+        display: none;
+       }
+}
+
+
+@media screen  and (min-width: 1441px){/* ---------------------------------------------------------------------laptop 4k- */
+   
+
+    .menu_mobile{
+        display: none;
+       }
+
+
+    
+}
+

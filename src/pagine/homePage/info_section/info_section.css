@@ -1,0 +1,542 @@
+
+/* ------------------------------------------------info containter --------------- */
+.info_content{
+    display: flex;
+    position: relative;
+    margin-top: 5%;
+    padding-left: 10%;
+    padding-right: 10%;
+    
+    gap: 5%;
+}
+/* --------------------testo --------------- */
+.text_info{
+    color:#ffff;
+    display: grid;
+    
+}
+
+.p_background{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    
+}
+
+
+
+/* --------------------pulsante --------------- */
+.button_info{
+    display:flex;
+    padding: 2% 5%;
+    position: relative;
+    bottom: 0;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    height: 50px;
+    border-radius: 100px;
+    cursor: pointer;
+ 
+}
+
+.button_info button{
+    position: absolute;
+    margin: o auto;
+    align-items: center;
+    z-index: 2;
+}
+
+.button_info::before{
+    content: '';
+    position: absolute;
+    top: -3px; /* Aggiunge uno spazio per il bordo gradiente */
+    left: -3px;
+    right: -3px;
+    bottom: -3px;
+    border-radius: 100px; /* Raggio del bordo uguale a quello della card */
+    background: linear-gradient(90deg, #00E45F, #3FCFFF);
+    background-size: 100% 100% ;
+    background-repeat: no-repeat;
+    z-index:-1; /* Posiziona il gradiente dietro la card */
+    
+
+}
+.button_info::after{
+    content: '';
+    background-color: #0F0F0F;
+    background-size: 100% 100% ;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: -1px; /* Aggiunge uno spazio per il bordo gradiente */
+    left: -1px;
+    right: -1px;
+    bottom: -1px;
+    border-radius: 100px;
+    z-index: 0;
+}
+
+/* --------------------media qwery --------------- */
+
+@media screen  and (max-width: 480px){/* ---------------------------------------------------------------------------mobile 376px- */
+    .info_content{
+        align-items: center;
+        justify-content: center;
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
+    .text_info{
+        height: 100%;
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        z-index: 1;
+        padding-left: 10%;
+        padding-right: 10%;
+    
+    }
+    .p_background{
+        min-width: fit-content;
+        opacity: 1;
+        padding: 5%;
+        width: 100%;
+        height: fit-content;
+        
+        margin-top: 50%;
+        background: rgba(28, 28, 28, 0.43);
+        backdrop-filter: blur(30px);
+        /* Note: backdrop-filter has minimal browser support */
+        border-radius: 20px;
+    
+    }
+
+    .svg_info{
+        z-index: 0;
+        margin-top: 10%;
+        scale: 0.7;
+    }
+   
+
+    .button_info{
+        align-self: center;
+        margin-top:8% ;
+        width: 150px;
+        height: 40px;
+        
+    }
+}
+
+@media screen and (max-width: 600px) and (min-width: 480px) {/* -----------------------------------------------------mobile 425px- */
+    .info_content{
+        align-items: center;
+        justify-content: center;
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
+    .text_info{
+        height: 100%;
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        z-index: 1;
+        padding-left: 10%;
+        padding-right: 10%;
+    
+    }
+    .p_background{
+        
+        opacity: 1;
+        padding: 5%;
+        width: 100%;
+       
+        height: fit-content;
+        
+        margin-top: 50%;
+        background: rgba(28, 28, 28, 0.43);
+        backdrop-filter: blur(30px);
+        /* Note: backdrop-filter has minimal browser support */
+        border-radius: 20px;
+    
+    }
+
+    .svg_info{
+        z-index: 0;
+        margin-top: 10%;
+        scale: 0.8;
+    }
+   
+
+    .button_info{
+        align-self: flex-end;
+        width: 150px;
+        height: 50px;
+        margin-top:5% ;
+        
+        
+    }
+
+}
+
+@media screen and (max-width: 899px) and (min-width: 600px){/* ------------------------------------------------------tablet 760px- */
+        .info_content{
+            align-items: center;
+            justify-content: center;
+            padding-left: 10%;
+            padding-right: 10%;
+        }
+
+        .text_info{
+            height: 100%;
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            z-index: 1;
+            padding-left: 10%;
+            padding-right: 10%;
+        
+        }
+        .p_background{
+            opacity: 1;
+            padding: 5%;
+            width: 100%;
+           
+            height: fit-content;
+            
+            margin-top: 50%;
+            background: rgba(28, 28, 28, 0.43);
+            backdrop-filter: blur(30px);
+            /* Note: backdrop-filter has minimal browser support */
+            border-radius: 20px;
+        
+        }
+
+        .svg_info{
+            z-index: 0;
+            margin-top: 10%;
+        }
+
+        .button_info{
+           
+            align-self: flex-end;
+            margin-top:5% ;
+            width: 150px;
+            height: 40px;
+            
+        }
+
+ 
+
+
+}
+
+@media screen and (max-width: 1024px) and (min-width: 900px){/* ----------------------------------------------------laptop 1024px- */
+    .svg_info{
+        scale: 0.8;
+    }
+
+}
+
+@media screen and (max-width: 1440px) and (min-width: 1025px){/* ---------------------------------------------------laptop 1440px- */
+    
+}
+
+@media screen  and (min-width: 1441px){/* ------------------------------------------------------------------------------laptop 4k- */
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*------------------------------INFO 2*/
+
+
+/* ------------------------------------------------info containter --------------- */
+.info_content2{
+    display: flex;
+    position: relative;
+    margin-top: 5%;
+    padding-left: 10%;
+    padding-right: 10%;
+    
+    gap: 5%;
+}
+/* --------------------testo --------------- */
+.text_info2{
+    color:#ffff;
+    display: grid;
+    
+}
+
+.p_background2{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    
+}
+
+
+
+/* --------------------pulsante --------------- */
+.button_info2{
+    display:flex;
+    padding: 2% 5%;
+    position: relative;
+    bottom: 0;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    height: 50px;
+    border-radius: 100px;
+    cursor: pointer;
+ 
+}
+
+.button_info2 button{
+    position: absolute;
+    margin: o auto;
+    align-items: center;
+    z-index: 2;
+}
+
+.button_info2::before{
+    content: '';
+    position: absolute;
+    top: -3px; /* Aggiunge uno spazio per il bordo gradiente */
+    left: -3px;
+    right: -3px;
+    bottom: -3px;
+    border-radius: 100px; /* Raggio del bordo uguale a quello della card */
+    background: linear-gradient(90deg, #00E45F, #3FCFFF);
+    background-size: 100% 100% ;
+    background-repeat: no-repeat;
+    z-index:-1; /* Posiziona il gradiente dietro la card */
+    
+
+}
+.button_info2::after{
+    content: '';
+    background-color: #0F0F0F;
+    background-size: 100% 100% ;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: -1px; /* Aggiunge uno spazio per il bordo gradiente */
+    left: -1px;
+    right: -1px;
+    bottom: -1px;
+    border-radius: 100px;
+    z-index: 0;
+}
+
+/* --------------------media qwery --------------- */
+
+@media screen  and (max-width: 320px) {
+    .svg_info2{
+        z-index: 0;
+        margin-top: 10%;
+        scale: 0.6;
+    }
+    .text_info2 p{
+        font-size: 14px;
+    }
+
+    .p_background2{
+        margin-top: 100%;
+    }
+
+}
+
+@media screen  and (max-width: 480px) and (min-width: 321px){/* ---------------------------------------------------------------------------mobile 376px- */
+    .info_content2{
+        align-items: center;
+        justify-content: center;
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
+    .text_info2{
+        height: 100%;
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        z-index: 1;
+        padding-left: 10%;
+        padding-right: 10%;
+    
+    }
+    .p_background2{
+        min-width: fit-content;
+        opacity: 1;
+        padding: 5%;
+        width: 100%;
+        height: fit-content;
+        
+        margin-top: 50%;
+        background: rgba(28, 28, 28, 0.43);
+        backdrop-filter: blur(30px);
+        /* Note: backdrop-filter has minimal browser support */
+        border-radius: 20px;
+    
+    }
+
+    .svg_info2{
+        z-index: 0;
+        margin-top: 10%;
+        scale: 0.7;
+    }
+   
+
+    .button_info2{
+        align-self: center;
+        margin-top:8% ;
+        width: 150px;
+        height: 40px;
+        
+    }
+}
+
+@media screen and (max-width: 600px) and (min-width: 480px) {/* -----------------------------------------------------mobile 425px- */
+    .info_content2{
+        align-items: center;
+        justify-content: center;
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
+    .text_info2{
+        height: 100%;
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        z-index: 1;
+        padding-left: 10%;
+        padding-right: 10%;
+    
+    }
+    .p_background2{
+        
+        opacity: 1;
+        padding: 5%;
+        width: 100%;
+        height: fit-content;
+        
+        margin-top: 50%;
+        background: rgba(28, 28, 28, 0.43);
+        backdrop-filter: blur(30px);
+        /* Note: backdrop-filter has minimal browser support */
+        border-radius: 20px;
+    
+    }
+
+    .svg_info2{
+        z-index: 0;
+        margin-top: 10%;
+        scale: 0.8;
+    }
+   
+
+    .button_info2{
+        align-self: flex-end;
+        width: 150px;
+        height: 50px;
+        margin-top:5% ;
+        
+        
+    }
+
+}
+
+@media screen and (max-width: 899px) and (min-width: 600px){/* ------------------------------------------------------tablet 760px- */
+        .info_conten2{
+            align-items: center;
+            justify-content: center;
+            padding-left: 10%;
+            padding-right: 10%;
+        }
+
+        .text_info2{
+            height: 100%;
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            z-index: 1;
+            padding-left: 10%;
+            padding-right: 10%;
+        
+        }
+        .p_background2{
+            opacity: 1;
+            padding: 5%;
+            width: 100%;
+           
+            height: fit-content;
+            
+            margin-top: 50%;
+            background: rgba(28, 28, 28, 0.43);
+            backdrop-filter: blur(30px);
+            /* Note: backdrop-filter has minimal browser support */
+            border-radius: 20px;
+        
+        }
+
+        .svg_info2{
+            z-index: 0;
+            margin-top: 10%;
+        }
+
+        .button_info2{
+           
+            align-self: flex-end;
+            margin-top:5% ;
+            width: 150px;
+            height: 40px;
+            
+        }
+
+ 
+
+
+}
+
+@media screen and (max-width: 1024px) and (min-width: 900px){/* ----------------------------------------------------laptop 1024px- */
+    .svg_info2{
+        scale: 0.8;
+    }
+
+}
+
+@media screen and (max-width: 1440px) and (min-width: 1025px){/* ---------------------------------------------------laptop 1440px- */
+    
+}
+
+@media screen  and (min-width: 1441px){/* ------------------------------------------------------------------------------laptop 4k- */
+    
+}

@@ -1,0 +1,72 @@
+.categorie_container{
+    position: relative;
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 5%;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+    width: 100%;
+    height: fit-content;
+    
+    padding: 10px;
+    margin-top:10vh ;
+    justify-content: space-between;
+    align-content: center;
+    padding-left: 10%;
+    padding-right: 10%;
+    
+    
+}
+
+.categorie_container::-webkit-scrollbar {
+    display: none; /* Nasconde la barra dello scroll su Chrome, Safari, Edge */
+}
+
+
+
+
+/* pulsanti */
+
+
+
+
+
+.categorie_button{
+    
+   
+    display: flex;
+    width: 150px;
+    height: 37px;
+    padding: 0.5% 4%;
+    
+    
+    color:#ffff;
+    align-items: center;
+    justify-content: space-evenly;
+    
+    
+   
+    background-color: #1c1c1c;
+    outline: transparent;
+   
+    
+    transition: all 0.3s ease-in-out;
+    border-radius: 50px;
+    cursor: pointer;
+    white-space: nowrap; /* Impedisce al testo di andare a capo */
+    flex-shrink: 0; /* Impedisce che i pulsanti si ridimensionino */
+    
+ 
+}
+.categorie_button:hover{
+    outline: 1.5px solid #c0c0c0;
+    background-color: #1c1c1c90;
+    backdrop-filter: blur(100px);
+}
+
+
+/* --------------------testo pulsanti--------------- */
+.categorie_button h4{
+    font-size: 14px;
+}

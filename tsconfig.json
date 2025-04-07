@@ -1,0 +1,77 @@
+{
+
+
+  "compilerOptions": {
+
+    
+		 /* Language and Environment */
+		"target": "es2022",    
+		"module": "ESNext",
+		"lib": ["dom","dom.iterable","es2023"],
+		"jsx": "react-jsx",
+		
+
+
+
+    	/* Gestione dei moduli */
+        
+
+		"rootDir": "./src",                                                                 
+		"baseUrl": "./src",                                     
+		"moduleResolution": "node",
+
+
+    /* Gestione dei controlli */
+
+		"strict": true,                                     
+		"noImplicitAny": true,                             
+		"strictNullChecks": true, 
+
+
+
+
+		/* Interop */
+		"esModuleInterop": true,
+		"resolveJsonModule": true,  
+		"allowSyntheticDefaultImports": true, 
+
+
+		/* Ottimizzazione */
+
+		"removeComments": true, 
+		"sourceMap": true, 
+		
+		
+		/* Controlli aggiuntivi */
+
+		"noUnusedLocals": true, 
+		"noUnusedParameters": true, 
+		 "noImplicitReturns": true, 
+
+
+		 /* completezza */
+
+		 "skipLibCheck": true,
+		 "forceConsistentCasingInFileNames": true,
+
+
+  },
+
+
+  "include": [
+
+    "./src/global.d.ts",
+	"./src/**/*.tsx",
+	"./src/**/*.ts",
+	
+  ],
+
+  "exclude": [
+	"node_modules",
+  ],
+
+  "extends": "./tsconfig.app.json"
+
+  
+
+}

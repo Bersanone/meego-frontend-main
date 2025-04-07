@@ -1,0 +1,850 @@
+/*-------------------------------------------------------------------------------------------------CONTENT*/
+
+
+
+.log_content_container{
+    position: absolute;
+    left: calc(50% - 450px);
+    
+    top: calc(140px);
+   
+    width: 900px;
+    height: 550px;
+    
+   
+    
+}
+.login_container{
+    display: flex;
+    position: absolute;
+    justify-self: center;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+    min-height: 520px;
+}
+
+/*----------------------------------input section-----------------------*/ 
+
+.input_section{
+    color: #ffff;
+    background-color: #1C1C1C;
+    border-radius: 20px 0 0 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+    width: 50%;
+    padding: 5% 5% 5% 5%;
+}
+
+.top_content{
+    position: relative;
+    
+    
+    gap: 5%;
+}
+.top_content p{
+    font-size: 14px;
+}
+
+.p_content{
+    display: flex;
+    gap: 5%;
+}
+
+.registrati{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/*--------------------username-----------------------*/
+#surname_input{
+    margin-top: 5%;
+}
+
+.username_content {
+    position: relative;
+    margin-top: 5%;
+    margin-left: calc(50% - 150px);
+    width: 316px;
+    
+
+  }
+  
+  .username_input {
+    display: flex;
+    margin-top: 2%;
+    position: relative; /* Necessario per posizionare il label assolutamente */
+    
+
+}
+
+  
+  .input_label {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    
+    transform: translateY(-50%);
+    font-size: 16px;
+    color: #ffffff;
+    pointer-events: none;
+    transition: all 0.3s ease;
+  }
+  
+  .username_input input {
+    border: 1px solid #343434;
+    display: block;
+    background-color:transparent;
+    width: 100%;
+    border-radius: 5px;
+    padding: 1rem 60px 1rem 1rem;
+    font-size: 1rem;
+    color: #ffffff;
+    
+  }
+  
+  .username_input input:focus + .input_label,
+  .username_input input:not(:placeholder-shown) + .input_label {
+    top: 0;
+    font-size: 12px;
+    background-color: #1C1C1C;
+    padding: 0 2% 0 2%;
+     /* Cambia colore al focus */
+  }
+  
+  .username_input img {
+    transform: translateX(-40px);
+    width: 16px !important;
+    height: auto;
+  }
+/*--------------------Email-----------------------*/
+.email_content{
+    position: relative;
+    margin-top: 5%;
+    margin-left: calc(50% - 150px);
+   
+    width: 316px;
+}
+
+.email_input{
+    display: flex;
+    margin-top: 2%;
+    position: relative; 
+   
+    
+}
+
+.email_input img{
+    transform: translateX(-40px);
+    width: 16px;
+}
+.email_input input{
+    border: 1px solid #343434;
+    display: block;
+    background-color:transparent;
+    width: 100%;
+    border-radius: 5px;
+    padding: 1rem 60px 1rem 1rem;
+    font-size: 1rem;
+    color: #ffffff;
+ 
+}
+
+.email_input input:focus + .input_label,
+.email_input input:not(:placeholder-shown) + .input_label {
+  top: 0;
+  font-size: 12px;
+  background-color: #1C1C1C;
+  padding: 0 2% 0 2%;
+   /* Cambia colore al focus */
+}
+
+.email_input input:valid {
+    border: 1px solid #2fff00;
+}
+
+
+/*--------------------Password-----------------------*/
+.password_content{
+    position: relative;
+    margin-top: 5%;
+    margin-left: calc(50% - 150px);
+    
+    width: 316px;
+   
+}
+
+.password_input{
+    display: flex;
+    margin-top: 2%;
+    box-sizing: border-box;
+    position: relative; 
+    
+    
+}
+
+.password_input img{
+    transform: translateX(-40px);
+    cursor: pointer;
+}
+
+.password_input input{
+    border: 1px solid #343434;
+    display: block;
+    background-color:transparent;
+    width: 100%;
+    border-radius: 5px;
+    padding: 1rem 60px 1rem 1rem;
+    font-size: 1rem;
+    color: #ffffff;
+   
+    
+}
+.password_content a{
+   display: flex;
+   width: fit-content;
+    
+}
+.password_content p{
+    color: #c0c0c0;
+    margin-top: 2%;
+    font-size: 14px;
+    position: absolute;
+    margin-right: 10%;
+    right: 0;
+    text-align: right;
+}
+
+.password_input input:focus + .input_label,
+.password_input input:not(:placeholder-shown) + .input_label {
+  top: 0;
+  font-size: 12px;
+  background-color: #1C1C1C;
+  padding: 0 2% 0 2%;
+   /* Cambia colore al focus */
+}
+/*--------------------Accedi button-----------------------*/
+
+.login_button{
+    background-color: #3FCFFF;
+    display: flex;
+   
+    cursor: pointer;
+    color: #000000;
+    position: relative;
+    margin-left: calc(50% - 150px);
+   
+    margin-bottom: 5%;
+    margin-top: 5%;
+    height: 50px;
+    width: 300px;
+    min-height:50px ;
+    
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.6s, transform 0.9s ease-in;
+
+}
+
+.login_button:hover{
+    
+    background-color: #ffffff;
+}
+
+.login_button p{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/*--------------------------------svg section-----------------------*/ 
+.svg_section{
+    color: #ffff;
+    width: 50%;
+    background-color: #1a1a1adf;
+    backdrop-filter: blur(100px);
+    border-radius: 0 20px 20px 0;
+    overflow: hidden;
+    z-index: 2;
+
+   
+  
+}
+
+.svg_section h1{
+    position: absolute;
+    padding: 10%;
+    z-index: 1;
+}
+
+.svg_container{
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    justify-self: center;
+    align-items: center;
+}
+.LogIn_svg,
+.SignUp_svg{
+    position: relative;
+    width: 125%;
+    transform: translateY(20%) translateX(-12.5%);
+    justify-self: center;
+   
+   
+}
+   
+
+/*--------------------------------pulsanti accesso Apple Google-----------------------*/
+
+.shortCut_button{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 2%;
+}
+
+.shortCut_button p{
+    background-color: #1C1C1C;
+    text-align: center;
+    z-index: 10;
+    width: 50px;
+}
+.Line{
+    position: absolute;
+    border-radius: 30px;
+    width: 100%;
+    height: 0.5px;
+    background-color: #ffff;
+}
+
+.googApp_button_section{
+    display: flex;
+    
+    margin: 0 auto;
+    flex-direction: row;
+    width: 100%;
+    
+    justify-content: center;
+    align-content: center;
+    
+   
+    top: calc(50% + 500px);
+   
+}
+.googApp_button_section p{
+    color: #ffff;
+    font-weight: lighter;
+    font-size: 16px;
+}
+
+.googApp_button_container{
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.google_button, 
+.apple_button{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:space-evenly ;
+    width: 150px;
+    height: 55px;
+    outline: 1px solid #343434;
+    border-radius: 100px;
+    cursor: pointer;
+    z-index: 10;
+    background-color: #0f0f0f54;
+    backdrop-filter: blur(20px);
+}
+
+
+.Spacer{
+    height: 200px;
+}
+
+
+
+/*------------------------------------------------------------------media qwery-----------------------*/ 
+
+
+
+
+
+@media screen  and (max-width: 320px) {
+    
+   
+        
+        /*  --------------------------------------container----------- */
+        
+
+        .log_content_container h1{
+            font-size: 24px;
+            
+        }
+        .log_content_container p {
+            font-size: 14px;
+        
+        }
+        .login_container{
+            flex-direction: column;
+            width: 90%;
+            height: 70vh;
+            background-color: #1c1c1c;
+            
+            border-radius: 30px ;
+            padding: 5%;
+           
+            
+        }
+    
+ 
+        /*  -------------------------------------input section----------- */
+
+    
+
+        .input_section{
+            position: relative;
+            z-index: 1;
+            margin-top: 2%;
+            left: 5%;
+            width: 90%;
+            height: 100%;
+            
+            background-color: transparent;
+            padding: 0;
+            border-radius:  0;
+        }
+
+       
+
+        
+        /*  ---------------------input----------- */
+        .input_container{
+            width: 100%;
+            
+            justify-items: center;
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+        }
+        .username_content,
+        .email_content,
+        .password_content{
+            position: relative;
+            width: 100%;
+            margin-left: 0;
+            transform: translateX(8px);
+           
+        }
+        
+
+        
+
+        .username_input input,
+        .email_input input,
+        .password_input input{
+            font-size: 14px;
+            width: 100%;
+            
+        }
+        
+
+       
+        .login_button{
+            
+            margin-left:  0;
+            margin-bottom: 10%;
+            width: 100%;
+            height: 55px;
+            
+        }
+
+        .login_button p{
+            font-size: 16px;
+        }
+
+
+        /*  ------------------------------------------svg section----------- */
+        .svg_section {
+           
+            display: none;
+           
+            
+           
+        }
+
+        
+        .svg_section h1{
+            display: none;
+        }
+        
+        .SignUp_svg,
+        .LogIn_svg{
+            display: none;
+        }
+
+
+
+
+        /*  ---------------------animazione mobile----------- */
+        .signup-state .input_section {
+            transform: translateX(0) !important; 
+            border-radius:  0 !important;
+           
+        }
+        
+        .signup-state .svg_section {
+            transform: translateX(0) !important; 
+            border-radius:0 !important;
+            
+        }
+        /*  -------------------------------------------pulsanti google apple----------- */
+        
+        .googApp_button_container{
+            top: 85vh;
+        }
+        
+        
+        
+        .googApp_button_container p{
+            display: none;
+        }
+
+        .google_button, 
+        .apple_button{
+            
+            width: 100px;
+            height: 50px;
+            background-color: #0f0f0fdd;
+            
+
+        }
+
+        .google_button img, 
+        .apple_button img{
+            width: 20px;
+
+        }
+ 
+
+
+
+
+          
+}
+
+@media screen and (max-width: 699px) and (min-width: 321px) {
+        
+
+
+
+        /*  --------------------------------------container----------- */
+        .log_content_container{
+            
+            left: 0;
+            right: 0;
+            top: 100px;
+            
+            
+            width: 100%;
+            height: 700px;
+        }
+
+        .log_content_container h1{
+            font-size: 24px;
+            
+        }
+        .log_content_container p {
+            font-size: 14px;
+        
+        }
+        .login_container{
+            flex-direction: column;
+            width: 90%;
+            height: 80%;
+            background-color: #1c1c1c;
+            outline: 1.5px solid #343434;
+            border-radius: 30px ;
+            padding: 5%;
+           
+            
+        }
+
+        
+    
+ 
+        /*  -------------------------------------input section----------- */
+
+    
+
+        .input_section{
+            position: relative;
+            z-index: 1;
+            margin-top: 2%;
+            left: 5%;
+            width: 90%;
+            height: 100%;
+            
+            background-color: transparent;
+            padding: 0;
+            border-radius:  0;
+        }
+
+       
+
+        
+        /*  ---------------------input----------- */
+        .input_container{
+            width: 100%;
+            
+            justify-items: center;
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+        }
+        .username_content,
+        .email_content,
+        .password_content{
+            position: relative;
+            width: 100%;
+            margin-left: 0;
+            transform: translateX(8px);
+            
+           
+        }
+        
+
+        
+
+        
+        
+
+       
+        .login_button{
+            
+            margin-left:  0;
+            margin-bottom: 10%;
+            width: 100%;
+            height: 55px;
+            
+        }
+
+        .login_button p{
+            font-size: 16px;
+        }
+
+
+        /*  ------------------------------------------svg section----------- */
+        .svg_section {
+           
+            display: none;
+           
+            
+           
+        }
+
+        
+        .svg_section h1{
+            display: none;
+        }
+        
+        .SignUp_svg,
+        .LogIn_svg{
+            display: none;
+        }
+
+
+
+
+        /*  ---------------------animazione mobile----------- */
+        .signup-state .input_section {
+            transform: translateX(0) !important; 
+            border-radius:  0 !important;
+           
+        }
+        
+        .signup-state .svg_section {
+            transform: translateX(0) !important; 
+            border-radius:0 !important;
+            
+        }
+        /*  -------------------------------------------pulsanti google apple----------- */
+        
+        .googApp_button_section{
+            top: calc(700px);
+        }
+        
+        
+        
+        .googApp_button_container p{
+            display: none;
+        }
+
+        .google_button, 
+        .apple_button{
+            
+            width: 100px;
+            height: 50px;
+            background-color: #0f0f0fdd;
+            
+
+        }
+
+        .google_button img, 
+        .apple_button img{
+            width: 20px;
+
+        }
+            
+    }
+
+        @media screen and (max-width: 1024px) and (min-width: 700px){/* ----------------------------------------------------laptop 1024px- */
+            .log_content_container{
+                position: absolute;
+                left: calc(50% - 40%);
+                
+                top: calc(50% - 257.5px);
+                
+                width: 80%;
+                height: 500px;
+                
+               
+                
+            }
+
+            .username_content,
+            .password_content,
+            .email_content{
+                width: 100%;
+                margin-left: 5%;
+            }
+
+            .login_button{
+                width: 95%;
+                margin-left: 5%;
+            }
+
+            .SignUp_svg,
+            .LogIn_svg{
+                width: 150%;
+                transform: translateY(30%) translateX(-15.5%);
+            }
+
+        }
+        
+        @media screen and (max-width: 1440px) and (min-width: 1025px){/* ---------------------------------------------------laptop 1440px- */
+         
+        }
+        
+        @media screen  and (min-width: 1441px){/* ------------------------------------------------------------------------------laptop 4k- */
+            
+        }
+
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*--------------------------------------------------------ANIMAZIONI DI TRANSIZIONE-----------------------------------------------*/
+
+
+
+
+
+
+.login_container {
+    transition: all 0.5s ease-in-out;
+    position: relative;
+}
+
+.input_section {
+    transition: all 0.5s ease-in-out;
+    position: relative;
+    
+}
+
+.svg_section  {
+    transition: all 0.5s ease-in-out;
+    
+   
+}
+
+
+
+
+
+
+/*stato di login*/
+
+
+.login-state .input_section {
+    transform: translateX(0);
+   
+}
+
+.login-state .svg_section {
+    transform: translateX(0);
+   
+}
+
+.login-state .svg_section h1{
+     text-align: right;
+}
+
+/*stato di signup*/
+
+
+.signup-state .input_section {
+    transform: translateX(100%); 
+    border-radius: 0 20px 20px 0;
+}
+
+.signup-state .svg_section {
+    transform: translateX(-100%); 
+    border-radius:  20px 0 0 20px;
+}
+
+
+
+.input_section {
+    z-index: 2;
+}
+
+.svg_section {
+    z-index: 1;
+}

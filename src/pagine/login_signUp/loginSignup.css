@@ -1,0 +1,32 @@
+
+
+/*--------------------Rimozione stili pre impostati input-----------------------*/  
+input{
+    appearance: none;
+    all: unset;
+
+
+}
+
+ /* Stile quando l'input è attivo o in focus */
+ input:focus {
+    border: 1px solid #3FCFFF !important;
+
+  }
+
+  /* Stile per il contenuto autofill */
+  input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0px 100px inset #1c1c1c  !important;
+    box-sizing: border-box;
+    color: #ffff !important;
+
+    caret-color: #fff; /* Colore del cursore */
+  }
+
+  input:-webkit-autofill::first-line {
+    color: #ffff !important;
+  }
+
+
+
+ 

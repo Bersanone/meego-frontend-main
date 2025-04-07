@@ -1,0 +1,80 @@
+/* @import "tailwindcss"; */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+  }
+  
+  body {
+    width: 100%;
+    height: 100%;
+    background-color: #0f0f0f;
+    font-family: "Quicksand", serif;
+  
+  }
+  
+
+  
+  
+  a{
+    text-decoration: none;
+    color: #ffff;
+    outline: none;
+    
+  }
+  
+  
+  
+  button{
+    all: unset;
+    
+  }
+  
+  /*--------------------Rimozione stili pre impostati input-----------------------*/  
+  input[type="text"],
+  input[type="number"],
+  input[type="date"]{
+      appearance: none;
+      all: unset;
+  }
+  input[type="text"]:focus,
+  input[type="datetime-local"]:focus,
+  input[type="number"]:focus {
+      outline: none; /* Rimuove il contorno predefinito */
+  }
+  
+  /*--------------------stile scroll bar-----------------------*/  
+  
+  /* width */
+  body::-webkit-scrollbar {
+    width: 5px;
+    position: absolute;
+    background: transparent;
+    z-index: 20;
+   
+  }
+  
+  /* Track */
+  body::-webkit-scrollbar-track {
+    position: absolute;
+    width: 20px;
+  }
+  
+  /* Handle */
+  body::-webkit-scrollbar-thumb {
+    /* Rectangle 134 */
+   position: absolute;
+  
+  background: #1c1c1c;
+  border-radius: 100px;
+  
+  
+    border-radius: 10px;
+    
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }

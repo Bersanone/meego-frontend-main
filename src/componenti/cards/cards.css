@@ -1,0 +1,242 @@
+/* -------------------------------------card--------------- */
+
+
+.card {
+    background-color: #272727;
+    white-space: nowrap; /* Impedisce al testo di andare a capo */
+    flex-shrink: 0;
+    width: 340px;
+    height: 440px;
+    
+    cursor: pointer;
+
+    border-radius: 20px;
+    position: relative; /* Necessario per il pseudo-elemento */
+    transition: transform 0.3s ease; /* Transizione per l'ingrandimento */
+    box-shadow: 0 0px 8px 0 rgba(0, 0, 0, 0.6);
+}
+
+.card:hover {
+    transform: scale(1.05); /* Ingrandisce la card */
+    
+}
+
+.card::before {
+    content: '';
+    position: absolute;
+    top: -3px; /* Aggiunge uno spazio per il bordo gradiente */
+    left: -3px;
+    right: -3px;
+    bottom: -3px;
+    border-radius: 23px; /* Raggio del bordo uguale a quello della card */
+    background: linear-gradient(90deg, #00E45F, #3FCFFF);
+    background-size: 100% 100% ;
+    background-repeat: no-repeat;
+    z-index: -1; /* Posiziona il gradiente dietro la card */
+    opacity: 0; /* Invisibile di default */
+    transition: opacity 0.3s ease;
+    
+}
+
+.card::after{
+    content: '';
+    position: absolute;
+    border-radius: 20px;
+    width: 340px;
+    z-index: 0;
+    top: 0;
+    height: 440px;
+    background-color: #272727;
+    opacity: 1;
+   
+}
+
+.card:hover::before {
+    opacity: 1; /* Mostra il gradiente al passaggio del mouse */
+}
+
+
+
+
+
+
+/* --------------------card like button--------------- */
+.like_button_card{
+    z-index: 2;
+    transform: translateX(270px) translateY(20px);
+    position: absolute;
+    display: flex;
+    width: 51px;
+    height: 51px;
+    border-radius: 100%;
+    background-color: #ffff;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0px 8px 0 rgba(0, 0, 0, 0.6);
+    
+}
+
+.like_button_card svg{
+    z-index: 1;
+  position: relative;
+  width: 21px;
+  height: 18px;
+}
+
+/* --------------------card immagine--------------- */
+
+.card img{
+    z-index: 1;
+    position: relative;
+    width: 100%;
+    border-top-right-radius:20px ;
+    border-top-left-radius: 20px;
+}
+/* --------------------card text container--------------- */
+
+.text_card{
+    z-index: 1;
+    position: relative; 
+    padding: 5%;
+    
+
+}
+/* --------------------card titolo--------------- */
+
+.titolo_card{
+    z-index: 1;
+    color: #ffff;
+    
+}
+
+.titolo_card h4{
+    z-index: 1;
+    margin-bottom: 5%;
+}
+.titolo_card p{
+    z-index: 1;
+    font-weight: 300;
+    font-size: 16px;
+    color: #C0C0C0;
+    margin-bottom: 5%;
+}
+
+/* --------------------card recensioni--------------- */
+
+.recensioni{
+    z-index: 1;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    gap: 15%;
+    margin-bottom: 8%;
+    
+    
+
+}
+.recensioni_element{
+    display: flex;
+    align-items: center;
+    gap: 10% ;
+    
+
+}
+.recensioni_element img{
+    width: 20px;
+    height: 20px;
+}
+.recensioni span{
+   font-weight: 300;
+   font-size: 16px;
+    color: #C0C0C0;
+   
+}
+/* --------------------card prezzo--------------- */
+
+.prezzo {
+    position: relative;
+    
+    display: flex;
+    width: 100%;
+    align-items: center;
+  
+}
+.text_prezzo{
+    margin-left: auto; /* Spinge l'elemento automaticamente verso destra */
+    display: flex; /* Assicura che i suoi contenuti (testo, icone) siano ben allineati */
+    flex-direction: row; /* Allinea i contenuti verticalmente */
+    text-align: right; /* Allinea il testo a destra */
+    gap: 5px; /* Aggiunge uno spazio tra gli elementi interni */
+    font-size: 16px;
+    color: #fff;
+  
+}
+.prezzo span{
+    text-align: right;
+    font-weight: 300;
+    font-size: 16px;
+     color: #ffff;
+}
+.prezzo h4{
+    text-align: right;
+    color: #ffff;
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 8px;
+}
+
+.type_icon_card{
+    z-index: 2;
+    transform: translateX(270px) translateY(220px);
+    position: absolute;
+    display: flex;
+    width: 51px;
+    height: 51px;
+    border-radius: 100%;
+    background-color: #272727;
+    align-items: center;
+    justify-content: center;
+    padding: 3%;
+    
+}
+
+
+
+@media screen  and (max-width: 376px){/* ---------------------------------------------------------------------------mobile 376px- */
+    .card{
+        scale: 0.7;
+        transform: translateX(30%);
+        margin-left: -45%;
+    }
+    .card:hover {
+        transform: scale(0);
+        transform: translate(30%); /* Ingrandisce la card */
+        
+    }
+}
+
+@media screen and (max-width: 680px) and (min-width: 377px) {/* -----------------------------------------------------mobile 425px- */
+    .card{
+        scale: 0.8;
+        margin-left: -10%;
+    }
+    
+
+}
+
+@media screen and (max-width: 899px) and (min-width: 680px){/* ------------------------------------------------------tablet 760px- */
+
+}
+
+@media screen and (max-width: 1024px) and (min-width: 900px){/* ----------------------------------------------------laptop 1024px- */
+    
+
+}
+
+@media screen and (max-width: 1440px) and (min-width: 1025px){/* ---------------------------------------------------laptop 1440px- */
+ 
+}
+
+@media screen  and (min-width: 1441px){/* ------------------------------------------------------------------------------laptop 4k- */
+    
+}
