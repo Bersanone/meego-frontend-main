@@ -11,6 +11,7 @@
     height: 100%;
     background-color: #0f0f0f;
     font-family: "Quicksand", serif;
+    overflow-x: hidden;
   
   }
   
@@ -23,7 +24,11 @@
     outline: none;
     
   }
+
   
+  p, h1, h2, h3, h4, h5, h6{
+    cursor: default;
+  }
   
   
   button{

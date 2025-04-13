@@ -57,6 +57,8 @@ import Footer_1 from './componenti/footers/footer_1/footer_1.tsx';
 
 import LoginSignup from './pagine/login_signUp/loginSignup.tsx';
 
+import  EmailVerificationPage  from './pagine/verifica_email/email_verification.tsx';
+
 
 
 
@@ -225,6 +227,7 @@ function App() {
       <Routes>
         <Route path='/' element={<HomePage/>}/>
         <Route path='/loginSignup' element={<LoginSignup/>}/>
+        <Route path='/email-verification' element={<EmailVerificationPage/>}/>
    {/*    <Route path='/infoPublStr' element={<Info_PublStr/>}/> */}
       </Routes>
 

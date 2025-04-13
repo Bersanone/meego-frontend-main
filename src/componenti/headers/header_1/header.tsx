@@ -16,6 +16,7 @@ import './header.css';
 //importazione del modello user
 
 import { useUser } from '../../../Hooks/userProfile.tsx';
+import { useState } from 'react';
 
 
 
@@ -65,6 +66,13 @@ function Header () {
 
     const { user,userProfile } = useUser();
 
+    const [isVisible, setVisible] = useState(false);
+
+
+    const toggleMenu = () => {
+        setVisible(!isVisible);
+    };
+
     return (
         <>
 
@@ -102,7 +110,7 @@ function Header () {
                         <h4>Ciao {userProfile?.data.name}! 👋</h4>
                         <div className='user_img'> 
 {    userProfile?.data.photo_profile ? (
-     <img src={userProfile?.data.photo_profile}  />
+     <img src={userProfile?.data.photo_profile} onClick={toggleMenu} />
 ):(
     <img src={User_icon} alt="Icona utente predefinita" />
 )
@@ -121,7 +129,7 @@ function Header () {
     
         </header>
 
-        <div className='header_menuLat'>
+        <div className='header_menuLat'  style={{ display: isVisible ? 'flex' : 'none' }}>
             <div className='menuLat_button'>
                 
             <img src={GesAcc_icon} alt="" />

@@ -24,6 +24,17 @@ import { facebookLoginHandler } from '../../../utils/facebookLogin';
 
 
 
+
+//importrazione dei popup
+
+import Pop_Ok_Registr from '../../../componenti/Pop_up/LogInSignUp/Registrazione_compl/Pop_Ok_Registr';
+
+import Pop_accessoNeg from '../../../componenti/Pop_up/LogInSignUp/Accesso_nagato/accesso_negato';
+
+import Pop_invioEmail from '../../../componenti/Pop_up/LogInSignUp/Invio_email/invio_email';
+
+
+
 //interfaccia per i dati di autenticazione
 
 interface AuthData {
@@ -39,6 +50,8 @@ function Log_component () {
 
     const [visiblePassword, setVisiblePassword] = useState(false);
 
+    const [popStatus, setPopStatus] = useState<string | null>(null);
+
 
 
 
@@ -48,6 +61,29 @@ function Log_component () {
     const [username,  setUsername] = useState('');
     const [email,  setEmail] = useState('');
     const [password_hash,  setPassword] = useState('');
+
+
+
+
+
+
+    //funzione per la gestione del popup
+
+
+    const handlePopStatus = () => {
+
+
+
+        if(popStatus === 'ok_registr'){
+            return <Pop_Ok_Registr onClose={() => setPopStatus(null)}/>;
+        }else if(popStatus === 'accesso_negato'){
+            return <Pop_accessoNeg onClose={() => setPopStatus(null)}/>;
+        }else if(popStatus === 'invio_email'){
+            return <Pop_invioEmail onClose={() => setPopStatus(null)}/>;
+        }
+
+        return null;
+    }
 
 
 
@@ -100,8 +136,22 @@ function Log_component () {
             setUsername('');
             setEmail('');
             setPassword('');
+            
+
+            setPopStatus('invio_email');
+
+
+
+
         }else{
             console.log('errore',data);
+            
+
+            setPopStatus('accesso_negato');
+
+
+
+    
         }
 
 
@@ -168,7 +218,14 @@ function Log_component () {
     return (
            
     <>
+    
+    {handlePopStatus()}
+
+
+ 
+
         <div className="log_content_container">
+
             <div className={`login_container ${isSignup ? 'signup-state' : 'login-state'}`}>
 
                 <div className="input_section">
@@ -263,7 +320,7 @@ function Log_component () {
 
                             <button className='apple_button' onClick={handleFacebookLogin}>
                                     <img src={Facebook_icon}/>
-                                    <p>facebook</p>  
+                                    <p>Facebook</p>  
                             </button>
 
                             {/* <button className='apple_button'>
@@ -295,7 +352,7 @@ function Log_component () {
 
 
         </div>
-        <div className='Spacer'></div>
+     
 
        
         

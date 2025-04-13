@@ -1,0 +1,104 @@
+.Pop_bg{
+    position: fixed;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    z-index: 100;
+    background: rgba(15, 15, 15, 0.71);
+    backdrop-filter: blur(9.8px);
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+.Pop_Container{
+    align-items: center;
+    padding: 5%;
+    position: relative;
+    border-radius: 30px;
+    width: 50%;
+    max-width: 700px;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: space-around;
+    background-color: #1c1c1c;
+    color: #ffff;
+
+}
+.Pop_Container p{
+    text-align: center;
+}
+.Pop_Container h1
+{
+    text-align: center;
+    margin-bottom: 5%;
+    
+
+    
+}
+
+.Pop_Container a{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.Pop_Email_icon{
+    margin-top: 5%;
+}
+
+.Pop_close_icon{
+    position: absolute;
+    right:20px;
+    top: 20px;
+    cursor: pointer;
+}
+
+@media screen  and (max-width: 376px){/* ---------------------------------------------------------------------------mobile 376px- */
+    .Pop_Container{
+        width: 90%;
+        padding: 10%;
+    }
+
+    
+
+    .Pop_Container h1{
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width: 680px) and (min-width: 377px) {/* -----------------------------------------------------mobile 425px- */
+    .Pop_Container{
+        width: 90%;
+        padding: 10%;
+    }
+    .Pop_Container h1{
+        font-size: 25px;
+        
+        
+    }
+    
+
+    
+}
+
+@media screen and (max-width: 899px) and (min-width: 680px){/* ------------------------------------------------------tablet 760px- */
+    .Pop_Container{
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 1024px) and (min-width: 900px){/* ----------------------------------------------------laptop 1024px- */
+    
+
+}
+
+@media screen and (max-width: 1440px) and (min-width: 1025px){/* ---------------------------------------------------laptop 1440px- */
+ 
+}
+
+@media screen  and (min-width: 1441px){/* ------------------------------------------------------------------------------laptop 4k- */
+    
+}

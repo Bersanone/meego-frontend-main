@@ -1,10 +1,11 @@
 .log_bg_container{
     /* border: 1px solid blue ; */
     
-    margin: 0 auto;
+   
     position: absolute;
     z-index: -1;
-    
+    top: 0;
+    display: flex;
     align-items: center;
     justify-content: center;
     width: 100%;
@@ -20,8 +21,7 @@
 
 .log_color{
     position: relative;
-    margin-left:calc(25%);
-    margin-top: calc(50vh - 20vh);
+    
     width: 50%; /* Diametro */
     height: 40%; /* Diametro */
     background: linear-gradient(90deg, #00FF6F 0%, #3FCFFF 100%);

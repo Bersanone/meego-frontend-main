@@ -1,0 +1,119 @@
+.emailCheck_container{
+
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background-color: #0f0f0f;
+
+   
+}
+
+
+
+
+
+.emailCheck_text{
+    align-items: center;
+    padding: 5%;
+    position: relative;
+    border-radius: 30px;
+    width: 50%;
+    max-width: 700px;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: space-around;
+    background-color: #1c1c1c;
+    color: #ffff;
+    
+
+    
+
+}
+
+.emailCheck_text img{
+    width: 112px;
+}
+.emailCheck_text p{
+    text-align: center;
+    
+}
+.emailCheck_text h1
+{
+    text-align: center;
+    
+    margin-top: 5%;
+    
+
+    
+}
+
+.Button1{
+    color: #000;
+    padding: 0 4%;
+    height: 50px;
+    margin-top: 5%;
+    
+    text-decoration: none;
+    background-color: #3FCFFF;
+    text-align: center;
+    font-weight:700; 
+    cursor: pointer;
+    border-radius: 50px;
+    transition: all 0.3s ease-in-out;
+}
+
+.Button1:hover{
+    background-color: #ffffff;
+}
+
+@media screen  and (max-width: 376px){/* ---------------------------------------------------------------------------mobile 376px- */
+    .emailCheck_text{
+        width: 90%;
+        padding: 10%;
+    }
+
+    
+
+    .emailCheck_text h1{
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width: 680px) and (min-width: 377px) {/* -----------------------------------------------------mobile 425px- */
+    .emailCheck_text{
+        width: 90%;
+        padding: 10%;
+    }
+    .emailCheck_text h1{
+        font-size: 25px;
+        
+        
+    }
+    
+
+    
+}
+
+@media screen and (max-width: 899px) and (min-width: 680px){/* ------------------------------------------------------tablet 760px- */
+    .emailCheck_text{
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 1024px) and (min-width: 900px){/* ----------------------------------------------------laptop 1024px- */
+    
+
+}
+
+@media screen and (max-width: 1440px) and (min-width: 1025px){/* ---------------------------------------------------laptop 1440px- */
+ 
+}
+
+@media screen  and (min-width: 1441px){/* ------------------------------------------------------------------------------laptop 4k- */
+    
+}
