@@ -108,9 +108,9 @@ function Header () {
             {user && (
                     <div className="welcome_message">
                         <h4>Ciao {userProfile?.data.name}! 👋</h4>
-                        <div className='user_img'> 
+                        <div className='user_img' onClick={toggleMenu}> 
 {    userProfile?.data.photo_profile ? (
-     <img src={userProfile?.data.photo_profile} onClick={toggleMenu} />
+     <img src={userProfile?.data.photo_profile} />
 ):(
     <img src={User_icon} alt="Icona utente predefinita" />
 )

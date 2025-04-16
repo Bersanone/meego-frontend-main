@@ -33,6 +33,8 @@ import Pop_accessoNeg from '../../../componenti/Pop_up/LogInSignUp/Accesso_nagat
 
 import Pop_invioEmail from '../../../componenti/Pop_up/LogInSignUp/Invio_email/invio_email';
 
+import Pop_reset_pass from '../../../componenti/Pop_up/LogInSignUp/reset_password/pop_up_reset';
+
 
 
 //interfaccia per i dati di autenticazione
@@ -80,6 +82,9 @@ function Log_component () {
             return <Pop_accessoNeg onClose={() => setPopStatus(null)}/>;
         }else if(popStatus === 'invio_email'){
             return <Pop_invioEmail onClose={() => setPopStatus(null)}/>;
+        }else if(popStatus === 'reset_pass'){
+            return <Pop_reset_pass onClose={() => setPopStatus(null)}/>;
+
         }
 
         return null;
@@ -207,7 +212,11 @@ function Log_component () {
     const handleFacebookLogin = facebookLoginHandler();
 
 
-    
+
+
+
+
+
 
 
 
@@ -288,7 +297,7 @@ function Log_component () {
                             </div>
 
                             <a href="##">
-                                <p>{isSignup ? 'Password dimenticata?' : ''}</p>
+                                <p onClick={() => setPopStatus('reset_pass')}>{isSignup ? 'Password dimenticata?' : ''}</p>
                             </a>
 
                         </div>
@@ -296,8 +305,10 @@ function Log_component () {
                     </div>
 
 
+  
+                    <button className="login_button" disabled={email && password_hash ? false : true} onClick={handleSubmit}><p>{isSignup ? "Accedi" : "Registrati"}</p></button>
 
-                    <button className="login_button" onClick={handleSubmit}><p>{isSignup ? "Accedi" : "Registrati"}</p></button>
+                    
 
                         <div className='shortCut_button'>
                                 <p>o usa </p>
