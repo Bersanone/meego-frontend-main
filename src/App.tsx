@@ -59,6 +59,7 @@ import LoginSignup from './pagine/login_signUp/loginSignup.tsx';
 
 import  EmailVerificationPage  from './pagine/verifica_email/email_verification.tsx';
 
+import Reset_password from './pagine/reset_pw/reset_password.tsx';
 
 
 
@@ -228,6 +229,8 @@ function App() {
         <Route path='/' element={<HomePage/>}/>
         <Route path='/loginSignup' element={<LoginSignup/>}/>
         <Route path='/email-verification' element={<EmailVerificationPage/>}/>
+        <Route path='/reset-password' element={<Reset_password/>}/>
+
    {/*    <Route path='/infoPublStr' element={<Info_PublStr/>}/> */}
       </Routes>
 

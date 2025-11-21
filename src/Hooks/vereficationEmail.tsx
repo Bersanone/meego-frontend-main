@@ -28,7 +28,7 @@ export function EmailVerification() {
 
                 const token = new URLSearchParams(window.location.search).get('token');
 
-                console.log(token);
+       
 
                 const response = await fetch(`http://localhost:3000/api/users/verification/verify/email/${token}`, {
                     method: 'GET',
