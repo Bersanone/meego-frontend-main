@@ -4,10 +4,10 @@ import Review_full from './risorse/review_full.svg';
 import Review_void from './risorse/review_void.svg';
 
 import TypeIcon_meeting from './risorse/meeting_icon.svg';
-import TypeIcon_event from './risorse/evento_icon.svg';
+/*import TypeIcon_event from './risorse/evento_icon.svg';
 import TypeIcon_festa from './risorse/Feste_icon.svg';
 import TypeIcon_piccoli from './risorse/piccoli_icon.svg';
-
+*/
 
 
  function Card () {
