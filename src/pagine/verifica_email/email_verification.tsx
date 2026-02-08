@@ -23,7 +23,7 @@ export default function EmailVerificationPage() {
                         <>
                             <img src={Logo_svg} />
                            <svg width="75" height="75" viewBox="0 0 75 75" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <mask id="mask0_1150_1523" style={{mask-type:"alpha"}} maskUnits="userSpaceOnUse" x="0" y="0" width="75" height="75">
+                                <mask id="mask0_1150_1523" style={{maskType:"alpha"}} maskUnits="userSpaceOnUse" x="0" y="0" width="75" height="75">
                                 <rect x="0.932129" y="0.0880127" width="74" height="74" fill="#D9D9D9"/>
                                                 </mask>
                                 <g mask="url(#mask0_1150_1523)">
