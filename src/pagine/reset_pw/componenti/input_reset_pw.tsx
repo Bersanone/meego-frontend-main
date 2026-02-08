@@ -104,9 +104,8 @@ function Input_reset_pw(){
         </div>
         </>
     )
-
-}
 */
+}
 
 
 export default Input_reset_pw;
