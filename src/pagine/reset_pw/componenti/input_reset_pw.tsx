@@ -20,8 +20,7 @@ function Input_reset_pw(){
     // @ts-expect-error
     const [isPasswordVisible, setIsPasswordVisible] = useState(false);
 
-  /*
-    const handle_submit = async() =>{
+   export const handle_submit = async() =>{
 
         const resetData: resetData = {
             newPassword: newPassword,
@@ -104,7 +103,6 @@ function Input_reset_pw(){
         </div>
         </>
     )
-*/
 }
 
 
