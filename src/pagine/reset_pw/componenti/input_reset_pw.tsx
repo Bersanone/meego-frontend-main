@@ -17,9 +17,10 @@ function Input_reset_pw(){
     
     const [newPassword, setNewPassword] = useState("");
     const [confirmPassword, setConfirmPassword] = useState("");
+    // @ts-expect-error
     const [isPasswordVisible, setIsPasswordVisible] = useState(false);
 
-
+  /*
     const handle_submit = async() =>{
 
         const resetData: resetData = {
@@ -105,6 +106,7 @@ function Input_reset_pw(){
     )
 
 }
+*/
 
 
 export default Input_reset_pw;
