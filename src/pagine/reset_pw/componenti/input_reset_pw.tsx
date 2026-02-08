@@ -94,7 +94,7 @@ function Input_reset_pw(){
                     
 
                     <div className='Pop_button'>
-                        <button className='Button1'>Conferma</button>
+                        <button className='Button1' onClick={handle_submit}>Conferma</button>
                         
 
                     </div>
