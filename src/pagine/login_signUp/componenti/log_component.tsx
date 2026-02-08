@@ -1,14 +1,14 @@
 import './log_component.css';
 import Username_icon from '../Risorse/username_icon.svg';
-import Email_icon from '../risorse/email_icon.svg';
-import Password_icon from '../risorse/password_icon.svg';
-import Password_view_icon from '../risorse/password_view_icon.svg';
+import Email_icon from '../Risorse/email_icon.svg';
+import Password_icon from '../Risorse/password_icon.svg';
+import Password_view_icon from '../Risorse/password_view_icon.svg';
 
-import SignUp_svg from '../risorse/sign_up_svg.svg';
-import LogIn_svg from '../risorse/sign_in_svg.svg';
+import SignUp_svg from '../Risorse/sign_up_svg.svg';
+import LogIn_svg from '../Risorse/sign_in_svg.svg';
 
-import Google_icon from '../risorse/google_icon.svg';
-import Facebook_icon from '../risorse/facebook_icon.svg';
+import Google_icon from '../Risorse/google_icon.svg';
+import Facebook_icon from '../Risorse/facebook_icon.svg';
 
 
 import { useState } from 'react';
